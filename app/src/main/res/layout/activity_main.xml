@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent" android:layout_height="match_parent" android:background="#101114">
+ <LinearLayout android:orientation="vertical" android:padding="20dp"
+  android:layout_width="match_parent" android:layout_height="wrap_content">
+  <TextView android:text="Sonata Bass Roll-Off Test" android:textColor="#FFFFFF" android:textSize="26sp" android:textStyle="bold"
+   android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <TextView android:text="Native Android V1 • relative acoustic measurement" android:textColor="#A9ADB7" android:textSize="15sp"
+   android:layout_marginBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <Button android:id="@+id/checkBtn" android:text="CHECK MICROPHONE" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <TextView android:id="@+id/status" android:text="Microphone not checked." android:textColor="#FFFFFF" android:textSize="16sp"
+   android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <TextView android:text="Volume steps: 20 → 25 → 30 → 35 → 40 → 45
+Frequencies: 50, 63, 80, 100, 125, 250, 500, 630, 1000 Hz"
+   android:textColor="#A9ADB7" android:textSize="15sp" android:padding="8dp"
+   android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <Button android:id="@+id/startBtn" android:text="START / NEXT VOLUME" android:enabled="false"
+   android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <TextView android:id="@+id/instructions" android:text="Run microphone check first." android:textColor="#FFFFFF" android:textSize="20sp"
+   android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <TextView android:id="@+id/results" android:text="" android:textColor="#FFFFFF" android:textSize="14sp"
+   android:typeface="monospace" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <Button android:id="@+id/shareBtn" android:text="SHARE JSON RESULTS" android:enabled="false"
+   android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <TextView android:text="Important: This test detects relative acoustic bass compression. It does not by itself distinguish head-unit DSP roll-off from stock-speaker compression. Absolute SPL is not calibrated."
+   android:textColor="#A9ADB7" android:textSize="13sp" android:padding="12dp"
+   android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ </LinearLayout>
+</ScrollView>
